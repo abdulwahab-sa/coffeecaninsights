@@ -1,6 +1,9 @@
 const myEntries = document.querySelectorAll('.hide-card');
 const menu = document.querySelector('.mob-menu');
 const button = document.querySelector('.mob-menu-btn');
+const modal = document.querySelector('.modal');
+const modalCloseBtn = document.querySelector('.form-close-btn');
+const modalBtn = document.querySelector('.modal-open-btn');
 
 // Intersection observer used to animate in elements
 
@@ -33,4 +36,14 @@ window.addEventListener('click', function (e) {
 	if (!menu.contains(e.target) && !button.contains(e.target) && !menu.classList.contains('-translate-x-full')) {
 		menu.classList.add('-translate-x-full');
 	}
+});
+
+// Function to toggle form modal on clicking
+
+modalBtn.addEventListener('click', () => {
+	modal.classList.toggle('hidden');
+});
+
+modalCloseBtn.addEventListener('click', () => {
+	modal.classList.toggle('hidden');
 });
