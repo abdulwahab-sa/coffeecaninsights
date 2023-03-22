@@ -13,8 +13,42 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CoffeeCan Insights</title>
 	</head>
+
 	<body>
 		<div class="w-full h-full overflow-hidden">
+			<div class="w-full md:h-32 py-4 px-4 md:py-4 md:px-10 flex items-center justify-between">
+				<img src="./assets/coffeecan-logo.png" alt="" class="h-20 md:h-24" />
+
+				<div class="hidden md:flex md:items-center md:justify-end w-2/5 font-semibold">
+					<a href="#" class="hover:text-indigo-600 transition-all cursor-pointer">Services</a>
+					<a href="#" class="hover:text-indigo-600 transition-all cursor-pointer mx-3">Contact</a>
+					<button class="px-6 py-3 text-md rounded-md text-gray-100 font-semibold bg-indigo-600 hover:bg-indigo-800 transition-all">
+						Login
+					</button>
+				</div>
+
+				<div class="md:hidden flex items-center">
+					<button class="mob-menu-btn">
+						<svg
+							class="w-6 h-6"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div
+				class="mob-menu -translate-x-full transition-all md:hidden absolute top-28 opacity-90 flex flex-col justify-center items-center w-full h-48 text-gray-200 text-center bg-indigo-600 z-50 mob-menu border border-green-500"
+			>
+				<a href="#" class="block py-4 font-semibold">Services</a>
+				<a href="#" class="block py-4 font-semibold"> Contact </a>
+			</div>
 			<div class="">
 				<div class="md:flex md:px-10 md:my-14">
 					<div class="md:w-1/2">
@@ -28,7 +62,9 @@
 								We are powered by OpenAI , the most advanced large language based model (LLM) out there in the market, we offer the best use
 								of advanced analytics for the analysis of Articles , news , reports, even market sentiments for our customers
 							</p>
-							<button class="px-8 py-3 mt-6 text-lg rounded-md text-gray-100 font-semibold bg-indigo-600 hover:bg-indigo-800">
+							<button
+								class="px-8 py-3 mt-6 text-lg rounded-md text-gray-100 font-semibold bg-indigo-600 hover:bg-indigo-800 transition-all"
+							>
 								Register
 							</button>
 						</div>
@@ -152,14 +188,14 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col justify-center items-center relative h-full w-full mt-16 py-4">
+				<div class="flex flex-col justify-center items-center relative h-full w-full mt-12 py-4">
 					<div class="h-72 w-72 absolute top-1/4 bottom-0 -left-32 rounded-full bg-indigo-800 opacity-10 z-10"></div>
 					<div class="h-64 w-72 absolute top-3/4 bottom-0 -right-32 rounded-full bg-indigo-800 opacity-10 z-10"></div>
 
 					<h2 class="mb-1 text-center text-4xl font-semibold text-indigo-700">Services</h2>
 					<h2 class="text-center text-4xl font-semibold">We Provide</h2>
 
-					<div class="flex flex-col h-full w-full mt-4 py-4">
+					<div class="flex flex-col h-full w-full md:w-10/12 md:mx-auto mt-4 py-4">
 						<div class="flex flex-col my-2 h-full w-full p-4 md:flex-row md:px-10 md:items-center">
 							<div class="hide-card md:w-1/2 md:flex-col">
 								<h2 class="my-2 text-2xl font-semibold">Biweekly Nifty-Fifty Report</h2>
@@ -210,15 +246,65 @@
 						</div>
 					</div>
 				</div>
-				<div class="h-full w-5/6 my-3 mx-auto bg-indigo-800 px-4 py-10 text-center rounded-2xl md:flex md:flex-col">
+				<div class="h-full w-5/6 my-3 mx-auto bg-indigo-600 px-4 py-10 text-center rounded-2xl md:flex md:flex-col">
 					<span class="text-2xl text-gray-200 font-semibold md:text-3xl"> Get free consultancy</span>
 					<button
-						class="px-6 py-4 mt-6 text-lg md:mx-auto rounded-2xl text-gray-100 font-semibold border border-gray-200 hover:bg-indigo-600 hover:border-indigo-600"
+						class="px-6 py-4 mt-6 text-lg md:mx-auto rounded-2xl text-gray-100 font-semibold border border-gray-200 hover:bg-indigo-800 hover:border-indigo-800 transition-all"
 					>
 						Create a Booking
 					</button>
 				</div>
 			</div>
+			<footer class="rounded-tr-3xl bg-indigo-600 mt-12 h-fullbg-indigo-600 flex flex-col py-6 px-4">
+				<div class="text-left md:flex md:py-12 md:items-start md:justify-evenly">
+					<div class="">
+						<img src="./assets/coffeecan-logo-white.png" alt="" class="h-16 md:h-20" />
+						<p class="text-gray-300 text-xs font-normal mt-3 pr-11 max-w-md">
+							We are powered by OpenAI , the most advanced large language based model (LLM) out there in the market, we offer the best use
+							of advanced analytics for the analysis of Articles , news , reports, even market sentiments for our customers.
+						</p>
+					</div>
+					<div class="my-10 md:my-0">
+						<span class="text-gray-300 text-sm font-semibold">Important Links</span>
+						<div class="mt-2 w-64 pr-8 flex justify-between text-gray-300 text-xs md:flex-col md:h-28 md:mt-4 md:font-semibold">
+							<a href="#"> About Us </a>
+							<a href="#"> Services </a>
+							<a href="#"> Login </a>
+							<a href="#"> Sign Up </a>
+						</div>
+					</div>
+					<div class="my-6 md:my-0">
+						<span class="text-gray-300 text-sm font-semibold">Contact Info</span>
+
+						<div class="my-2 text-gray-300 text-xs flex items-center">
+							<span class="flex mr-4"
+								><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+									<path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+									<path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+								</svg>
+							</span>
+
+							<span> vijay.b@coffeecaninsights.com </span>
+						</div>
+						<div class="my-2 text-gray-300 text-xs flex items-center">
+							<span class="flex mr-4"
+								><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+									<path
+										fill-rule="evenodd"
+										d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</span>
+
+							<span> Lorem Ipsum, India </span>
+						</div>
+					</div>
+				</div>
+				<div class="text-center border-t border-t-gray-300 px-4 pt-4 pb-2 text-xs text-gray-300">
+					<span> Copyright &#169; 2023 COFFEECANINSIGHTS </span>
+				</div>
+			</footer>
 		</div>
 		<script src="./index.js"></script>
 	</body>
